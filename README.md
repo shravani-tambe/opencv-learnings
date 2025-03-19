@@ -1,2 +1,2 @@
-# opencv-learnings-
-python scripts for OpenCV foundational learnings. 
+# opencv-learnings
+Python scripts for OpenCV foundational learnings. 
