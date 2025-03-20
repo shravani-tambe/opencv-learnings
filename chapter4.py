@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-#SHAPES AND FONTS 
+#SHAPES AND FONTS .
 
 img = np.zeros((512, 512, 3), np.uint8)
 
