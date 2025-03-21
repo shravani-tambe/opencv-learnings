@@ -1,7 +1,7 @@
 '''the convention for x-y coordinates in opencv is such that, the positive x axis and the negative y axis are the positive x-y axis of the plane
 refer: https://shorturl.at/Kl2E9'''
 
-#IMAGE RESIZING 
+#IMAGE RESIZING AND CROPPING
 
 import cv2
 import numpy as np

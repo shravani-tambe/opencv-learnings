@@ -1,7 +1,6 @@
 import cv2
-import numpy as np 
+import numpy as np
 
-#STACKING IMAGES TOGETHER, PUT IMAGES YOU WANT TO WARP AS ELEMENTS IN THE MATRIX 
 def stackImages(scale,imgArray):
     rows = len(imgArray)
     cols = len(imgArray[0])
@@ -32,18 +31,3 @@ def stackImages(scale,imgArray):
         hor= np.hstack(imgArray)
         ver = hor
     return ver
-
-img = cv2.imread('images/lena.png')
-imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-
-imgStack = stackImages(0.5,([img,imgGray],[img,img]))
-
-cv2.imshow("ImageStack",imgStack)
-
-'''imgHor = np.hstack((img, img))
-imgVer = np.vstack((img, img))
-
-cv2.imshow("Horizontal", imgHor)
-cv2.imshow("Verical", imgVer)'''
-
-cv2.waitKey(0)

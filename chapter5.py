@@ -1,7 +1,7 @@
 import cv2 
 import numpy as np 
 
-#WARPING AN IMAGE
+#WARP PERSPECTIVE
 
 img = cv2.imread("images/cards.jpg")
 

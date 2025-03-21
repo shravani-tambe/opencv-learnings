@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+#COLOUR DETECTION 
+
 def empty(a):
     pass
 
@@ -61,12 +63,13 @@ while True:
     v_min = cv2.getTrackbarPos("Val Min", "TrackBars")
     v_max = cv2.getTrackbarPos("Val Max", "TrackBars")
     print(h_min,h_max,s_min,s_max,v_min,v_max)
+    
+    ### MAIN CODE HERE ###
     lower = np.array([h_min,s_min,v_min])
     upper = np.array([h_max,s_max,v_max])
-    
+    mask = cv2.inRange(imgHSV,lower,upper) #b&w image mask 
     
     #imgHSV -> to detect from, lower -> lower boundary of the color, higher -> upper boundary
-    mask = cv2.inRange(imgHSV,lower,upper) #b&w image mask 
     
     '''bitwise and will take two images and perform the AND operation, 
     wherev the pixels are both present -> 

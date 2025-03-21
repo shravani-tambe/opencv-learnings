@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+#CONTOUR/SHAPE DETECTION 
+
 def stackImages(scale,imgArray):
     rows = len(imgArray)
     cols = len(imgArray[0])
